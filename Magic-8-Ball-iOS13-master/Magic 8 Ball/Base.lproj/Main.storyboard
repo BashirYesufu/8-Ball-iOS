@@ -38,6 +38,9 @@
                                     <color key="baseForegroundColor" systemColor="systemTealColor"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="askButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qow-qU-4LT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -52,6 +55,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xcn-2y-KSz" secondAttribute="bottom" constant="100" id="k71-wc-d6r"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="askButtonPressed" destination="xcn-2y-KSz" id="Wg3-E8-7VD"/>
+                        <outlet property="ballImage" destination="qbq-fY-Cwh" id="OCG-fo-D2A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
